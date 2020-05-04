@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+
+</head>
+
+
+<body>
+    <div class="card text-center">
+        <div class="card-body">
+            <h1>Weather Dashboard </h1>
+        </div>
+
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+
+                <form class="form-inline mr-auto">
+                    <label for="Search">Search a city:</label>
+                    <input id="input" class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                    <button id="search-btn" class="btn btn-primary" type="submit">Search</button>
+                </form>
+                <div id="city-group">
+                    <ul class="list-group">
+
+                    </ul>
+                </div>      
+            </div>
+            <div class="col-md-8">
+                <div class="row">
+                    <div class="col-md-lg">
+                        <div id="current">
+                            <p id="cityname">City:</p>
+                            <p id="date">Date:</p>
+                            <p id="temp">Temperature</p>
+                            <img id="icon" src="" alt="">
+                            <p id="humidity">humidity:</p>
+                            <p id="windspeed">windspeed:</p>
+                            <p id="uv"></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="fiveday">
+                    <div id="dayone" >
+                        <p id="dateOne"></p>
+                        <p id="tempOne"></p>
+                        <p id="humidityOne"></p>
+                    </div>
+                    <div id="daytwo">
+                        <p id="dateTwo"></p>
+                        <p id="tempTwo"></p>
+                        <p id="humidityTwo"></p>
+                    </div>
+                    <div id="daythree">
+                        <p id="dateThree"></p>
+                        <p id="tempThree"></p>
+                        <p id="humidityThree"></p>
+                    </div>
+                    <div id="dayfour">
+                        <p id="dateFour"></p>
+                        <p id="tempFour"></p>
+                        <p id="humidityFour"></p>
+                    </div>
+                    <div id="dayfive">
+                        <p id="dateFive"></p>
+                        <p id="tempFive"></p>
+                        <p id="humidityFive"></p>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
