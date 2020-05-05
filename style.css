@@ -17,5 +17,10 @@ h1 {
    
 }
 
+.high {
+    color: red;
+}
 
-
+.low{
+    color: yellowgreen;
+}

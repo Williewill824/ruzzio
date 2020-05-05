@@ -40,9 +40,9 @@ function getCurrent(userCity){
     getUv(lat,lon);
     $("#cityname").text("City: " + city);
     $("#date").text("Date: " + date);
-    $("#temp").text("Temperature: " + temp);
-    $("#humidity").text("Humidity: " + humidity);
-    $("#windspeed").text("Wind Speed: " + windSpeed);
+    $("#temp").text("Temperature: " + temp + String.fromCharCode(176) + "F");
+    $("#humidity").text("Humidity: " + humidity + "%");
+    $("#windspeed").text("Wind Speed: " + windSpeed + "Mph");
     $("#icon").attr("src",img);
 });
 };
@@ -91,9 +91,9 @@ function getFiveDayForCast(userCity){
 
       
       var dateEl = $("<p>").text("Date: " + date);
-      var humidityEl = $("<p>").text("Humidity: " + humidity); 
+      var humidityEl = $("<p>").text("Humidity: " + humidity + "%"); 
       var iconEl = $("<img>").attr("src", icon);  
-      var tempEL = $("<p>").text("Temperature: " + temp);
+      var tempEL = $("<p>").text("Temperature: " + temp + String.fromCharCode(176) + "F");
 
       var forecastCol = $("<div class='col'>");
       var forecastMainDiv = $("<div class='forecastDays'>");
